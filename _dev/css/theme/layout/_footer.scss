@@ -3,11 +3,23 @@
 .l-footer {
   padding-top: map.get($spacers, 5);
   margin-top: auto;
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: $white;
+  }
+
+  a {
+    color: $digruttola2;
+  }
 }
 
 .footer-container {
   padding-top: map.get($spacers, 5);
   padding-bottom: map.get($spacers, 2);
   margin-top: map.get($spacers, 5);
-  background: $gray-100;
+  background: $footer-back;
+}
+
+#footer_contact_list {
+  color: $white;
 }

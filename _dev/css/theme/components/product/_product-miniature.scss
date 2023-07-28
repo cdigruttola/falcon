@@ -2,6 +2,7 @@
 
 .product-miniature {
   $self: &;
+  box-shadow: 0 8px 15px rgba(0,0,0,.2);
 
   &__functional-btn {
     position: absolute;
@@ -49,5 +50,9 @@
       margin: 0;
     }
 
+  }
+
+  &:hover {
+    box-shadow: 0 8px 15px rgba(0,0,0,.4);
   }
 }

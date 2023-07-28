@@ -1,12 +1,16 @@
 @use "sass:map";
 /* HEADER STYLES */
 
+.header-nav {
+  display: none !important;
+}
+
 .l-header {
   margin: 0 0 map.get($spacers, 3);
 }
 
 .header-top {
-  background: $white;
+  background: $background;
   border-bottom: 1px solid $border-color;
 
   &__row {

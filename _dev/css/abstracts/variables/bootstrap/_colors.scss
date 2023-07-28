@@ -23,11 +23,16 @@ $green:   #28a745;
 $teal:    #20c997;
 $cyan:    #17a2b8;
 
-$primary:       $blue;
+$background: #f6f2e9;
+$digruttola1: #840d15;
+$digruttola2: #E39C48;
+$footer-back: #28292b;
+
+$primary:       $digruttola1;
 $secondary:     $gray-600;
 $success:       $green;
 $info:          $cyan;
 $warning:       #ff9a52;
-$danger:        $red;
+$danger:        $digruttola1;
 $light:         $gray-100;
 $dark:          $gray-800;

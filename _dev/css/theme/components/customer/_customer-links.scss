@@ -45,13 +45,13 @@
     }
 
     @include hover-focus() {
-      color: $primary;
+      color: $digruttola2;
       text-decoration: none;
     }
 
     i {
       margin-right: map.get($spacers, 1);
-      color: $primary;
+      color: $digruttola2;
       @include font-size(26px);
       @include media-breakpoint-up(md) {
         margin-right: map.get($spacers, 2);
@@ -60,7 +60,7 @@
 
     &.active {
       color: #fff;
-      background: $primary;
+      background: $digruttola2;
 
       &::after {
         display: block;

@@ -1,3 +1,10 @@
 .form-label {
   display: block;
 }
+
+.custom-select {
+    &:focus {
+      border-color: $digruttola1;
+      box-shadow: 0 0 0 $input-focus-width rgba($digruttola1, .25);
+  }
+}

@@ -124,7 +124,7 @@
   }
 
   &__sub {
-    background: $gray-100;
+    background: $background;
     @include media-breakpoint-up(md) {
       position: absolute;
       top: 100%;
@@ -133,7 +133,7 @@
       z-index: 100;
       padding: map.get($spacers, 4) map.get($spacers, 4) map.get($spacers, 3);
       visibility: hidden;
-      background: $white;
+      background: $background;
       box-shadow: $box-shadow;
       opacity: 0;
       transition: 0.2s ease-in;
