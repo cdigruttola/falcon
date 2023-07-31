@@ -48,6 +48,7 @@
       <section id="content" class="page-content page-maintenance">
         {block name='page_content'}
           {$maintenance_text nofilter}
+          <div id="content-maintenance"></div>
         {/block}
       </section>
     {/block}

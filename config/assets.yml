@@ -45,6 +45,7 @@ js:
       - cart
       - checkout
       - order-confirmation
+      - order
   listing:
     fileName: listing.js
     priority: 200
@@ -56,3 +57,7 @@ js:
       - manufacturer
       - search
       - module-is_favoriteproducts-favorite
+  contact:
+    fileName: contact.js
+    include:
+      - contact

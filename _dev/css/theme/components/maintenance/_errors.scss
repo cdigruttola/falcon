@@ -1,0 +1,11 @@
+#main {
+  .page-maintenance {
+    margin-bottom: 10rem;
+
+    #content-maintenance {
+      width: 100%;
+      content: url(../img/maintenance.svg);
+      height: 30vh;
+    }
+  }
+}

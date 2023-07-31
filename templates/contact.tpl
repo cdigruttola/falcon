@@ -41,5 +41,12 @@
 {/if}
 
 {block name='page_content'}
-  {widget name="contactform"}
+  <section id="contact-map">
+    <div class="row">
+      <div class="col-12">
+        <div id="googleMap" style="width:100%;height:400px">Insert maps here</div>
+      </div>
+    </div>
+  </section>
+    {widget name="contactform"}
 {/block}

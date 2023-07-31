@@ -31,5 +31,12 @@
         width: 100%;
       }
     }
+
+    #content-404 {
+      margin: 50px 0;
+      content: url(../img/404.svg);
+      height: 50vh;
+    }
+
   }
 }
