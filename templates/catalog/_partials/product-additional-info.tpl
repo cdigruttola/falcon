@@ -23,5 +23,17 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 <div class="product-additional-info js-product-additional-info">
+    {if isset($product.weight) and ($product.weight != "")}
+      <div class="product-weight">
+        <label class="label">{l s='Weight' d='Shop.Theme.Catalog'}: </label>
+        <span itemprop="weight">{$product.weight|string_format:"%.3f"} {$product.weight_unit} ℮</span>
+        <p>{l s='Product subject to a natural weight loss.' d='Shop.Theme.Catalog'}</p>
+      </div>
+    {/if}
+    {*TODO change this part then with {$grade}*}
+  <div class="comments-note">
+    <span>{l s='Grade' d='Modules.Productcomments.Shop'}</span>
+    <div class="grade-stars" data-grade="5"></div>
+  </div>
   {hook h='displayProductAdditionalInfo' product=$product}
 </div>

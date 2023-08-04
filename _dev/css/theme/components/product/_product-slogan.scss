@@ -1,0 +1,22 @@
+.product-slogan {
+  margin: 30px 0;
+  padding: 15px;
+  background-color: #840D15;
+}
+
+.slogan {
+  font-size: 26px;
+  font-style: italic;
+  color: #FFF;
+  text-align: center;
+  padding: 15px;
+
+  &.fa-quote-left {
+    font-size: 50px;
+    font-style: normal;
+    color: #FEFEFE;
+    opacity: 0.6;
+    text-align: center;
+    padding: 15px;
+  }
+}

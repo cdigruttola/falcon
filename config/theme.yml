@@ -63,6 +63,10 @@ global_settings:
      - ps_shoppingcart
      - ps_imageslider
      - blockwishlist
+   custom_hooks:
+     - name: displayProductSlogan
+       title: displayProductSlogan
+       description: Display slogan in PDP
   hooks:
     modules_to_hook:
       displayNav1:
