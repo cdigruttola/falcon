@@ -1,10 +1,6 @@
 @use "sass:map";
 /* HEADER STYLES */
 
-.header-nav {
-  display: none !important;
-}
-
 .l-header {
   margin: 0 0 map.get($spacers, 3);
 }

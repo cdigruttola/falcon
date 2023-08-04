@@ -28,17 +28,6 @@
     </div>
 {/block}
 
-{block name='header_nav'}
-    <nav class="header-nav border-bottom bg-light py-1 d-none d-md-block">
-        <div class="container">
-            <div class="row align-items-center">
-                {hook h='displayNav1'}
-                {hook h='displayNav2'}
-            </div>
-        </div>
-    </nav>
-{/block}
-
 {block name='header_top'}
     <div class="js-header-top-wrapper">
 
