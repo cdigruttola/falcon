@@ -16,4 +16,9 @@
   &--sm {
     @include font-size($font-size-base);
   }
+
+  & .decimal {
+    font-size: medium;
+  }
+
 }

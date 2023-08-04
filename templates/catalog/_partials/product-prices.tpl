@@ -23,6 +23,8 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 {if $product.show_price}
+    {assign currency_symbol Context::getContext()->currency->symbol}
+
   <div class="product-prices js-product-prices mb-3">
 
     {block name='product_price'}
@@ -43,7 +45,10 @@
             {if '' !== $smarty.capture.custom_price}
               {$smarty.capture.custom_price nofilter}
             {else}
-              {$product.price}
+              <div class="current-price">
+                {assign var="split" value="."|explode:{$product.price_amount}}
+                <span>{$split[0]},<span class="decimal">{$split[1]}</span> {$currency_symbol}</span>
+              </div>
             {/if}
           </span>
           {block name='product_discount'}

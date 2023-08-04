@@ -1,3 +1,5 @@
+{assign currency_symbol Context::getContext()->currency->symbol}
+
 {block name='product_price_and_shipping'}
   {if $product.show_price}
     <div class="product-miniature__pricing text-right">
@@ -8,7 +10,8 @@
 
       {hook h='displayProductPriceBlock' product=$product type="before_price"}
 
-      <span class="price" aria-label="{l s='Price' d='Shop.Theme.Catalog'}">{$product.price}</span>
+        {assign var="split" value="."|explode:{$product.price_amount}}
+      <span class="price" aria-label="{l s='Price' d='Shop.Theme.Catalog'}">{$split[0]},<span class="decimal">{$split[1]}</span> {$currency_symbol}</span>
 
       {hook h='displayProductPriceBlock' product=$product type='unit_price'}
 
