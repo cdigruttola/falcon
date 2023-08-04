@@ -54,11 +54,6 @@
           {hook h='displayProductPriceBlock' product=$product type="old_price"}
         </div>
 
-        {block name='product_unit_price'}
-          {if $displayUnitPrice}
-            <p class="product-unit-price small">{$product.unit_price_full}</p>
-          {/if}
-        {/block}
       </div>
     {/block}
 

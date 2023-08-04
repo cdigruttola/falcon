@@ -71,13 +71,12 @@ global_settings:
     modules_to_hook:
       displayNav1:
         - ps_contactinfo
-      displayNav2:
-        - ps_languageselector
-        - ps_currencyselector
       displayTop:
         - is_searchbar
         - ps_customersignin
         - is_shoppingcart
+        - ps_languageselector
+        - ps_currencyselector
         - ps_mainmenu
       displayHome:
         - is_imageslider

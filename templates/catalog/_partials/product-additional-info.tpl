@@ -23,10 +23,22 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 <div class="product-additional-info js-product-additional-info">
+    {if isset($product.reference_to_display) && $product.reference_to_display neq ''}
+      <div class="product-reference">
+        <label class="label">{l s='Reference' d='Shop.Theme.Catalog'}: </label>
+        <span>{$product.reference_to_display}</span>
+      </div>
+    {/if}
+    {if isset($product.ean13) and $product.ean13 neq ''}
+      <div class="product-ean13">
+        <label class="label">{l s='EAN13' d='Shop.Theme.Catalog'}:</label>
+        <span itemprop="gtin13">{$product.ean13|escape:'html':'UTF-8'}</span>
+      </div>
+    {/if}
     {if isset($product.weight) and ($product.weight != "")}
       <div class="product-weight">
         <label class="label">{l s='Weight' d='Shop.Theme.Catalog'}: </label>
-        <span itemprop="weight">{$product.weight|string_format:"%.3f"} {$product.weight_unit} ℮</span>
+        <span>{$product.weight|string_format:"%.3f"} {$product.weight_unit} ℮</span>
         <p>{l s='Product subject to a natural weight loss.' d='Shop.Theme.Catalog'}</p>
       </div>
     {/if}
