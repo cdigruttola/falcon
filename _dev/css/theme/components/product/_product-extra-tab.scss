@@ -37,3 +37,23 @@ table.recycle {
     text-align: right;
   }
 }
+
+.allergen {
+  text-align: center;
+  width: 3em;
+  height: 3em;
+  box-sizing: content-box;
+  position: relative;
+  text-transform: uppercase;
+
+  &:before {
+    font-size: 1.8em !important;
+    color: #E39C48;
+    letter-spacing: 10px;
+  }
+}
+
+.icon-recycle:before {
+  color: #E39C48;
+  letter-spacing: 10px;
+}
