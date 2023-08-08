@@ -9,7 +9,7 @@
     "build-analyze": "webpack --progress --mode=production --env analyze=true",
     "build": "webpack --progress --mode=production --env stats=errors-only",
     "build-ci": "webpack --progress --mode=production --env stats=errors-only --env envFile=.env-example",
-    "watch": "webpack watch --progress --mode=development",
+    "watch": "webpack watch --progress --mode=development --env envFile=.env-dev",
     "dev": "webpack serve --progress --mode=development --env devServer=true",
     "scss-lint": "stylelint \"**/*.scss\" --fix",
     "scss-lint-fix": "stylelint \"**/*.scss\" --fix",
