@@ -137,11 +137,11 @@
       </div>
     </div>
 
+      {include file="catalog/_partials/product-tabs.tpl"}
+
       {block name='product_slogan'}
           {include file='catalog/_partials/product-slogan.tpl'}
       {/block}
-
-      {include file="catalog/_partials/product-tabs.tpl"}
 
     {block name='product_footer'}
       {hook h='displayFooterProduct' product=$product category=$category}
