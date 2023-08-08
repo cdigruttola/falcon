@@ -47,5 +47,4 @@
     <span>{l s='Grade' d='Modules.Productcomments.Shop'}</span>
     <div class="grade-stars" data-grade="5"></div>
   </div>
-  {hook h='displayProductAdditionalInfo' product=$product}
 </div>

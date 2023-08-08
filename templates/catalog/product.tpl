@@ -120,7 +120,9 @@
                     {include file='catalog/_partials/product-add-to-cart.tpl'}
                   {/block}
 
-                  {* Input to refresh product HTML removed, block kept for compatibility with themes *}
+                    {hook h='displayProductAdditionalInfo' product=$product}
+
+                    {* Input to refresh product HTML removed, block kept for compatibility with themes *}
                   {block name='product_refresh'}{/block}
                 </form>
               {/block}
