@@ -37,6 +37,6 @@
   </div>
     {hook h='displayProductSlogan' product=$product}
   <div
-    class="slogan col-lg-6 col-md-12"><p><i class="slogan fa fa-quote-left" aria-hidden="true"></i></p>
+    class="slogan col-lg-6 col-md-12"><p><i class="slogan icon icon-quote_left" aria-hidden="true"></i></p>
     <p>{l s='We are a family from Irpinia that produces artisanal bread and pasta, following traditional techniques.' d='Shop.Digruttola.Catalog'}</p></div>
 </div>
