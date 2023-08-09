@@ -67,6 +67,9 @@
                                             alt="{$shop.name} {l s='logo' d='Shop.Theme.Global'}">
                                 {/images_block}
                             </a>
+                            {if $page.page_name === 'index'}
+                              <h1 style="display: none">{$page.meta.title} Tradizione Artigianale</h1>
+                            {/if}
                         </div>
 
                         {hook h='displayTop'}

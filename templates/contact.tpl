@@ -24,7 +24,9 @@
  *}
 {extends file='page.tpl'}
 
-{block name='page_header_container'}{/block}
+{block name='page_header_container'}
+  <h1 style="display: none;">{$page.meta.title}</h1>
+{/block}
 
 {if $layout === 'layouts/layout-left-column.tpl'}
   {block name="left_column"}
