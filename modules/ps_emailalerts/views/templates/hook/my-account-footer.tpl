@@ -27,6 +27,7 @@
   <a class="links-list__link" href="{url entity='module' name='ps_emailalerts' controller='account'}" title="{l s='My alerts' d='Shop.Theme.Catalog'}">
     {l s='My alerts' d='Shop.Theme.Catalog'}
   </a>
+<li class="links-list__elem">
   <a class="links-list__link" href="{url entity='module' name='sendcloudapi' controller='tracking'}" title="{l s='Tracking' d='Shop.Theme.Catalog'}">
     {l s='Tracking' d='Shop.Theme.Catalog'}
   </a>
