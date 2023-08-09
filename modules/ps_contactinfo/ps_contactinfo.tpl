@@ -63,6 +63,18 @@
       <br>
         {mailto address=$contact_infos.email encode="javascript"}
     {/if}
+    {if $contact_infos.details}
+      <br>
+        {l
+        s='VAT Code: [1]%vat%[/1]'
+        sprintf=[
+        '[1]' => '<span>',
+        '[/1]' => '</span>',
+        '%vat%' => $contact_infos.details
+        ]
+        d='Shop.Theme.Global'
+        }
+    {/if}
   </div>
 
 </div>
