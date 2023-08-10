@@ -73,7 +73,7 @@
     {/if}
     {if $contact_infos.email && $display_email}
       <br>
-        {mailto address=$contact_infos.email encode="javascript"}
+        {mailto address=$contact_infos.email encode="hex"}
     {/if}
   </div>
 

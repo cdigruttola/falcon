@@ -52,7 +52,7 @@
       <div class="data email">
         {l s='Email us:' d='Shop.Theme.Global'}<br/>
       </div>
-      <a href="mailto:{$contact_infos.email}">{$contact_infos.email}</a>
+        {mailto address=$contact_infos.email encode="hex"}
     </div>
   {/if}
 </div>
