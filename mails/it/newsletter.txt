@@ -1,0 +1,9 @@
+ 
+
+{shop_url}
+
+Salve {firstname} {lastname},
+
+{message}
+
+[{shop_name}]({shop_url})
