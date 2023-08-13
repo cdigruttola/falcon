@@ -52,7 +52,7 @@
       <div class="data email">
         {l s='Email us:' d='Shop.Theme.Global'}<br/>
       </div>
-        {mailto address=$contact_infos.email encode="hex"}
+        {mailto address=$contact_infos.email encode="none"}
     </div>
   {/if}
 </div>
