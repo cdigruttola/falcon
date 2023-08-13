@@ -15,7 +15,7 @@
         {else}
           <label class="label">{l s='Brand' d='Shop.Theme.Catalog'}</label>
           <span>
-            <a href="{$product_brand_url}">{$product_manufacturer->name}</a>
+            <span>{$product_manufacturer->name}</span>
           </span>
         {/if}
       </div>
