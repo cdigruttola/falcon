@@ -23,7 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 <!doctype html>
-<html lang="{$language.locale}">
+<html lang="{$language.iso_code}">
 
   <head>
     {block name='head'}
@@ -31,7 +31,7 @@
     {/block}
   </head>
 
-  <body id="{$page.page_name}" class="{$page.body_classes|classnames}" lang="{$language.locale}">
+  <body id="{$page.page_name}" class="{$page.body_classes|classnames}" lang="{$language.iso_code}">
 
     {block name='hook_after_body_opening_tag'}
       {hook h='displayAfterBodyOpeningTag'}
