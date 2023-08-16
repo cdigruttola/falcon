@@ -1,0 +1,32 @@
+.blog-menu {
+  background: $background !important;
+}
+
+.blog-menu .collapse-icons .add:hover,
+.blog-menu .collapse-icons .remove:hover {
+  color: $digruttola2;
+}
+
+.blog-menu a:hover,
+.an-block-sidebar a:hover,
+.an-blog-tags a:hover,
+.blog-item .title a:hover {
+  color: $digruttola2 !important;
+}
+
+.products-grid {
+  background: $background !important;
+}
+
+
+.an-blog-tags .block_content a {
+  background-color: #ebebeb;
+}
+
+.an-blog-tags .block_content a:hover {
+  background-color: $digruttola2 !important;
+}
+
+.blog-content-wrapper {
+  background: $background !important;
+}
