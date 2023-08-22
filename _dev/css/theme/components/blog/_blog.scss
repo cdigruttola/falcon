@@ -1,0 +1,40 @@
+.blog-menu {
+  background: $body-bg !important;
+}
+
+.blog-menu .collapse-icons .add:hover,
+.blog-menu .collapse-icons .remove:hover {
+  color: $bgBody;
+}
+
+.blog-menu a:hover,
+.an-block-sidebar a:hover,
+.an-blog-tags a:hover,
+.blog-item .title a:hover {
+  color: $aHover !important;
+}
+
+.products-grid {
+  background: $body-bg !important;
+}
+
+
+.an-blog-tags .block_content a {
+  background-color: #ebebeb;
+}
+
+.an-blog-tags .block_content a:hover {
+  background-color: $bgBody !important;
+}
+
+.blog-content-wrapper {
+  background: $body-bg !important;
+
+  .pagination {
+    width: 100%;
+
+    .page-list {
+      display: inline-flex;
+    }
+  }
+}

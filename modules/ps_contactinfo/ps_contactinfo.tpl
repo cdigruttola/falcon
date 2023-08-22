@@ -34,6 +34,18 @@
 
   <div class="collapse d-md-block" id="footer_contact_list">
     {$contact_infos.address.formatted nofilter}
+      {if $contact_infos.details}
+        <br>
+          {l
+          s='VAT Code: [1]%vat%[/1]'
+          sprintf=[
+          '[1]' => '<span>',
+          '[/1]' => '</span>',
+          '%vat%' => $contact_infos.details
+          ]
+          d='Shop.Theme.Global'
+          }
+      {/if}
     {if $contact_infos.phone}
       <br>
       {* [1][/1] is for a HTML tag. *}
@@ -61,7 +73,7 @@
     {/if}
     {if $contact_infos.email && $display_email}
       <br>
-        {mailto address=$contact_infos.email encode="javascript"}
+        {mailto address=$contact_infos.email encode="hex"}
     {/if}
   </div>
 

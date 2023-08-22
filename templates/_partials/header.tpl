@@ -29,11 +29,10 @@
 {/block}
 
 {block name='header_nav'}
-    <nav class="header-nav border-bottom bg-light py-1 d-none d-md-block">
+    <nav class="header-nav d-none d-md-block">
         <div class="container">
             <div class="row align-items-center">
-                {hook h='displayNav1'}
-                {hook h='displayNav2'}
+                {hook h='displayNavFullWidth'}
             </div>
         </div>
     </nav>
@@ -49,7 +48,7 @@
 
                     <div class="row header-top__row">
 
-                        <div class="col flex-grow-0 header-top__block header-top__block--menu-toggle d-block d-md-none">
+                        <div class="col flex-grow-0 header-top__block header-top__block--menu-toggle d-block d-xl-none">
                             <a
                                     class="header-top__link"
                                     rel="nofollow"
@@ -63,7 +62,7 @@
                             </a>
                         </div>
 
-                        <div class="col-md-4 col header-top__block header-top__block--logo">
+                        <div class="col-md-1 col header-top__block header-top__block--logo">
                             <a href="{$urls.pages.index}">
                                 {images_block webpEnabled=$webpEnabled}
                                     <img
@@ -87,5 +86,4 @@
             </div>
         </div>
     </div>
-    {hook h='displayNavFullWidth'}
 {/block}

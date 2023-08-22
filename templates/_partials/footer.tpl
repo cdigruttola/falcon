@@ -42,4 +42,14 @@
       {/block}
     </div>
   </div>
+<div class="copyright-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+          {hook h='displayCopyrightContainerLeft'}
+      </div>
+    </div>
+  </div>
 </div>
+</div>
+

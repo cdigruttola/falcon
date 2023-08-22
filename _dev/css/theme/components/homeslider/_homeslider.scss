@@ -2,6 +2,41 @@
 
 .homeslider {
 
+  &.swiper {
+    width: 100vw;
+    overflow: visible;
+    margin-left: -10px;
+
+    @include media-breakpoint-up(sm) {
+      margin-left: calc(calc(520px - 100vw) / 2);
+    }
+
+    @include media-breakpoint-up(md) {
+      margin-left: calc(calc(700px - 100vw) / 2);
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-left: calc(calc(940px - 100vw) / 2);
+    }
+
+    @include media-breakpoint-up(xl) {
+      margin-left: calc(calc(1120px - 100vw) / 2);
+    }
+
+    .logo-in-slider {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      z-index: 9;
+      width: 262px;
+      height: 262px;
+      background-image: url(../img/logo_video.png);
+      background-size: cover;
+    }
+
+  }
+
   &__img {
     background: $gray-100;
   }

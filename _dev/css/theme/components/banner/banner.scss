@@ -1,0 +1,36 @@
+.banner {
+  text-align: center;
+  width: 100vw;
+  overflow: visible;
+  margin-left: -10px;
+
+  @include media-breakpoint-up(sm) {
+    margin-left: calc(calc(520px - 100vw) / 2);
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-left: calc(calc(700px - 100vw) / 2);
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-left: calc(calc(940px - 100vw) / 2);
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-left: calc(calc(1120px - 100vw) / 2);
+  }
+
+  .banner-desc {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-top: 25%;
+    color: $white;
+    font-size: 3.5em;
+    line-height: 1.3em;
+    font-style: italic;
+    font-weight: normal;
+    font-family: 'Playfair Display';
+  }
+
+}

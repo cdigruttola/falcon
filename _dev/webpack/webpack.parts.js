@@ -190,8 +190,8 @@ exports.preloadFonts = () => ({
     }),
     new FontPreloadPlugin({
       index: 'preload.html',
-      extensions: ['woff2'],
-      filter: /(materialicons|roboto-v20-latin-ext_latin-regular|roboto-v20-latin-ext_latin-700|roboto-v20-latin-ext_latin-500|icomoon)/i,
+      extensions: ['woff2', 'woff'],
+      filter: /(materialicons|icomoon|montserrat|PlayfairDisplay)/i,
       replaceCallback: ({ indexSource, linksAsString }) => {
         return indexSource.replace('{{{preloadLinks}}}', linksAsString);
       },

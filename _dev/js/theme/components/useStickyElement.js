@@ -15,7 +15,7 @@ export default (element, stickyWrapper, options = {}) => {
   }
 
   const {
-    extraOffsetTop = 0,
+    extraOffsetTop = -1,
     debounceTime = 5,
     zIndex = 100,
   } = options;

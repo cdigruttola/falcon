@@ -1,4 +1,7 @@
 .breadcrumb {
+
+  background-color: $bgBody;
+
   @include media-breakpoint-down(sm) {
     position: relative;
     flex-wrap: nowrap;

@@ -46,10 +46,11 @@
     &--top {
       @include font-size($font-size-lg);
       font-weight: 700;
-      color: $gray-900;
+      color: $white;
 
       @include hover-focus() {
         text-decoration: none;
+        color: $bgFooter;
       }
 
       @include media-breakpoint-up(md) {

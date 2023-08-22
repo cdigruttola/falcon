@@ -3,11 +3,46 @@
 .l-footer {
   padding-top: map.get($spacers, 5);
   margin-top: auto;
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, .copyright-container {
+    color: $white;
+  }
+
+  .copyright-container {
+    font-size: 11px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  a {
+    color: $white;
+    @include hover() {
+      text-decoration: none;
+    }
+  }
+
+  .block-social {
+    ul {
+
+      li {
+        a {
+          color: $primary;
+        }
+      }
+    }
+  }
+
 }
 
 .footer-container {
   padding-top: map.get($spacers, 5);
   padding-bottom: map.get($spacers, 2);
   margin-top: map.get($spacers, 5);
-  background: $gray-100;
+  background: $bgFooter;
+}
+
+#footer_contact_list {
+  color: $white;
 }

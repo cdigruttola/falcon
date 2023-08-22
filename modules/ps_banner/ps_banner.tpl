@@ -22,12 +22,13 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
-<a class="banner" href="{$banner_link}" title="{$banner_desc}">
+<div class="banner">
   {if isset($banner_img)}
     {images_block webpEnabled=$webpEnabled}
       <img src="{$banner_img}" alt="{$banner_desc}" title="{$banner_desc}" class="img-fluid">
+      <span class="banner-desc">{$banner_desc}</span>
     {/images_block}
   {else}
     <span>{$banner_desc}</span>
   {/if}
-</a>
+</div>

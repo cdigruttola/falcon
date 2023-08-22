@@ -24,22 +24,33 @@
  *}
 {extends file='page.tpl'}
 
+{block name='javascript_head'}
+    {include file="_partials/javascript.tpl" javascript=$javascript.head vars=$js_custom_vars}
+  <script type="text/javascript">
+    largerMap = "{l s='View larger map' d='Shop.Theme.Contact'}";
+    directions = "{l s='Directions' d='Shop.Theme.Contact'}";
+  </script>
+{/block}
+
 {block name='page_header_container'}{/block}
 
 {if $layout === 'layouts/layout-left-column.tpl'}
-  {block name="left_column"}
-    <div id="left-column" class="col-12 col-sm-4 col-md-3">
-      {widget name="ps_contactinfo" hook='displayLeftColumn'}
-    </div>
-  {/block}
+    {block name="left_column"}
+      <div id="left-column" class="col-12 col-sm-4 col-md-3">
+          {widget name="ps_contactinfo" hook='displayLeftColumn'}
+      </div>
+    {/block}
 {else if $layout === 'layouts/layout-right-column.tpl'}
-  {block name="right_column"}
-    <div id="right-column" class="col-12 col-sm-4 col-md-3">
-      {widget name="ps_contactinfo" hook='displayRightColumn'}
-    </div>
-  {/block}
+    {block name="right_column"}
+      <div id="right-column" class="col-12 col-sm-4 col-md-3">
+          {widget name="ps_contactinfo" hook='displayRightColumn'}
+      </div>
+    {/block}
 {/if}
 
 {block name='page_content'}
-  {widget name="contactform"}
+  <section id="contact-map">
+    <div id="googleMap" style="width:100%;height:400px"></div>
+  </section>
+    {widget name="contactform"}
 {/block}
