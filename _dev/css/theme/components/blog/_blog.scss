@@ -29,4 +29,13 @@
 
 .blog-content-wrapper {
   background: $background !important;
+
+  .pagination {
+    width: 100%;
+
+    .page-list {
+      display: inline-flex;
+    }
+  }
+
 }
