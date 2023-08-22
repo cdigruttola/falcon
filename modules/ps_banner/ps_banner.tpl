@@ -23,10 +23,10 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 <div class="banner">
+  <div class="banner-desc">{$banner_desc}</div>
   {if isset($banner_img)}
     {images_block webpEnabled=$webpEnabled}
       <img src="{$banner_img}" alt="{$banner_desc}" title="{$banner_desc}" class="img-fluid">
-      <span class="banner-desc">{$banner_desc}</span>
     {/images_block}
   {else}
     <span>{$banner_desc}</span>

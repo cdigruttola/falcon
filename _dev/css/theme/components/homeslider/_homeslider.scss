@@ -27,12 +27,28 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
       z-index: 9;
       width: 262px;
       height: 262px;
       background-image: url(../img/logo_video.png);
       background-size: cover;
+
+      @include media-breakpoint-down(lg) {
+        width: calc(262px / 2);
+        height: calc(262px / 2);
+      }
+
+      @include media-breakpoint-down(md) {
+        width: calc(262px / 3);
+        height: calc(262px / 3);
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: calc(262px / 4);
+        height: calc(262px / 4);
+      }
+
     }
 
   }
