@@ -11,7 +11,7 @@ $(() => {
       $('.js-qv-product-cover').attr('src', $(event.target).data('image-large-src'));
     });
 
-    qv.find('#quantity_wanted').TouchSpin({
+    qv.find('.quantity_wanted').TouchSpin({
       verticalupclass: 'material-icons touchspin-up',
       verticaldownclass: 'material-icons touchspin-down',
       buttondown_class: 'btn btn-touchspin js-touchspin',
