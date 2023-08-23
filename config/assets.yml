@@ -56,7 +56,3 @@ js:
       - manufacturer
       - search
       - module-is_favoriteproducts-favorite
-  contact:
-    fileName: contact.js
-    include:
-      - contact

@@ -13,17 +13,15 @@
               >{l s='Description' d='Shop.Theme.Catalog'}</a>
           </li>
         {/if}
-        {if $modules.is_themecore.show_product_details}
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              data-toggle="tab"
-              href="#product-details"
-              role="tab"
-              aria-controls="product-details"
-              >{l s='Product Details' d='Shop.Theme.Catalog'}</a>
-          </li>
-        {/if}
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            data-toggle="tab"
+            href="#product-details"
+            role="tab"
+            aria-controls="product-details"
+            >{l s='Product Details' d='Shop.Theme.Catalog'}</a>
+        </li>
         {if $product.attachments}
           <li class="nav-item">
             <a
