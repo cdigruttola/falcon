@@ -58,8 +58,6 @@
                                     <img
                                             {if !empty($shop.logo_details)}
                                                 src="{$shop.logo_details.src}"
-                                                width="{$shop.logo_details.width}"
-                                                height="{$shop.logo_details.height}"
                                             {else}
                                                 src="{$shop.logo}"
                                             {/if}
