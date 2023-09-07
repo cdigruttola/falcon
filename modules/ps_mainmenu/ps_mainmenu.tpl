@@ -1,7 +1,7 @@
 {assign var=_counter value=0}
 {function name="menu" nodes=[] depth=0 parent=null}
   {if $nodes|count}
-    <ul {if $depth === 0}class="main-menu__dropdown js-main-menu h-100" role="navigation"{else} class="main-menu__list main-menu__list--{$depth}"{/if} data-depth="{$depth}">
+    <ul {if $depth === 0}class="main-menu__dropdown js-main-menu h-100" role="menu"{else} class="main-menu__list main-menu__list--{$depth}"{/if} data-depth="{$depth}">
       {foreach from=$nodes item=node}
         {if $node.children|count}
           {assign var=_expand_id value=10|mt_rand:100000}
@@ -15,6 +15,7 @@
           <div class="main-menu__item-header">
           {/if}
             <a
+              role="menuitem"
               class="d-md-flex w-100 h-100 main-menu__item-link {if $depth === 0}main-menu__item-link--top{else}main-menu__item-link--sub main-menu__item-link--{$depth}{/if} {if $node.children|count}main-menu__item-link--hassubmenu{else}main-menu__item-link--nosubmenu{/if}"
               href="{$node.url}" data-depth="{$depth}"
               {if $node.open_in_new_window} target="_blank" {/if}
