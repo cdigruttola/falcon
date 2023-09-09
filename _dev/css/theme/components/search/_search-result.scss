@@ -27,9 +27,9 @@
     .products-list__block {
       padding: 0 map.get($spacers, 2);
       margin: 0 0 map.get($spacers, 3);
-      @include make-col(6);
+      @include make-col(12);
       @include media-breakpoint-up(md) {
-        @include make-col(4);
+        @include make-col(12);
       }
     }
   }

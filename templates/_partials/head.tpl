@@ -54,7 +54,7 @@
 {/block}
 
 {block name='head_viewport'}
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, minimum-scale=1">
 {/block}
 
 {block name='head_icons'}
