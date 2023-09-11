@@ -21,22 +21,24 @@
 * @copyright Copyright since 2007 Carmine Di Gruttola
 * @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *}
-
-<div class="product-slogan row">
-    {assign base_uri constant('__PS_BASE_URI__')}
-    {assign image_url {$base_uri}|cat:'themes/falcon/img/slogan_pdp.jpg'}
-  <div class="col-lg-6 col-md-12">
-    <img
-      src="{$image_url}"
-      alt="Slogan"
-      title="Slogan"
-      width="100%"
-      height="auto"
-      itemprop="image"
-    >
+{images_block}
+  <div class="product-slogan row">
+      {assign base_uri constant('__PS_BASE_URI__')}
+      {assign image_url {$base_uri}|cat:'themes/falcon/img/slogan_pdp.jpg'}
+    <div class="col-lg-6 col-md-12">
+      <img
+        src="{$image_url}"
+        alt="Slogan"
+        title="Slogan"
+        width="100%"
+        height="auto"
+        itemprop="image"
+      >
+    </div>
+      {hook h='displayProductSlogan' product=$product}
+    <div
+      class="slogan col-lg-6 col-md-12"><p><i class="slogan icon icon-quote_left" aria-hidden="true"></i></p>
+      <p>{l s='We are a family from Irpinia that produces artisanal bread and pasta, following traditional techniques.' d='Shop.Digruttola.Catalog'}</p>
+    </div>
   </div>
-    {hook h='displayProductSlogan' product=$product}
-  <div
-    class="slogan col-lg-6 col-md-12"><p><i class="slogan icon icon-quote_left" aria-hidden="true"></i></p>
-    <p>{l s='We are a family from Irpinia that produces artisanal bread and pasta, following traditional techniques.' d='Shop.Digruttola.Catalog'}</p></div>
-</div>
+{/images_block}
