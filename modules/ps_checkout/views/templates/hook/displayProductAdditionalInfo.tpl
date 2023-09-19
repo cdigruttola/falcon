@@ -19,7 +19,7 @@
 
 <div class="ps_checkout payment-method-logo-block left">
   <div class="ps_checkout payment-method-logo-block-title">
-    <img src="{$modulePath}views/img/lock_checkout.svg" alt="">
+    <img src="{$modulePath}views/img/lock_checkout.svg" alt="lock_checkout">
     {l s='100% secure payments' mod='ps_checkout'}
   </div>
   {foreach from=$paymentOptions item=paymentOption}
