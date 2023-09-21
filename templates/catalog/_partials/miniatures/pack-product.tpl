@@ -23,7 +23,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 {block name='pack_miniature_item'}
-  <div class="card overflow-hidden">
+  <div class="card overflow-hidden card-pack-item">
     <div class="row no-gutters flex-nowrap">
       <div class="col-4 col-md-3 col-xl-2">
         <a href="{$product.url}" title="{$product.name}">

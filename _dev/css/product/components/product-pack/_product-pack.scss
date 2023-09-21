@@ -1,0 +1,16 @@
+
+.card-group-vertical {
+  > .card.card-pack-item {
+    display: inline-flex;
+    width: 49%;
+
+    &:not(:last-child) {
+      border-radius: 0.4rem;
+    }
+
+    &:not(:first-child) {
+      border-top: 0.0625rem solid rgba(0, 0, 0, 0.125);
+      border-radius: 0.4rem;
+    }
+  }
+}
