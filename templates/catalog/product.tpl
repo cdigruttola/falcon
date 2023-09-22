@@ -97,7 +97,7 @@
                     {if $packItems}
                       <section class="product-pack">
                         <p class="h4">{l s='This pack contains' d='Shop.Theme.Catalog'}</p>
-                        <div class="card-group-vertical mb-4">
+                        <div class="card-group-vertical card-group-vertical-pack mb-4">
                           {foreach from=$packItems item="product_pack"}
                             {block name='product_miniature'}
                               {include file='catalog/_partials/miniatures/pack-product.tpl' product=$product_pack showPackProductsPrice=$product.show_price}

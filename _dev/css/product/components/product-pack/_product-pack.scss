@@ -1,8 +1,13 @@
+.card-group-vertical-pack {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 
-.card-group-vertical {
   > .card.card-pack-item {
     display: inline-flex;
     width: 49%;
+    align-self: stretch;
 
     &:not(:last-child) {
       border-radius: 0.4rem;
