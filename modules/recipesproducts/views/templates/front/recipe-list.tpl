@@ -22,7 +22,7 @@
 * @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *}
 
-<div class="recipe-list col-xs-12 col-sm-6 col-xl-4">
+<div class="recipe-list col-xs-6 col-sm-4 col-xl-3">
   <article class="recipe_list_content" id="{$recipe.id}">
     <a href="{$recipe.recipe_url}">
       <div class="recipe_time">
