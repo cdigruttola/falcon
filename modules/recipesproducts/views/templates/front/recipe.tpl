@@ -88,97 +88,97 @@
                   <div class="recipe-nutrition wrapper" itemscope="" itemprop="nutrition"
                        itemtype="https://schema.org/NutritionInformation">
                       {assign var=_expand_id value=10|mt_rand:100000}
-                    <div class="title clearfix hidden-md-up"
-                         data-target="#nutrition_sub_menu_{$_expand_id}" data-toggle="collapse"
-                         aria-expanded="false">
+                    <div class="d-flex align-items-center mb-3 justify-content-between position-relative">
                       <span class="recipe_content-info">{l s='Nutrition facts' d='Modules.Recipesproducts.Front'}</span>
-                      <span class="pull-xs-right">
-                                            <span class="navbar-toggler collapse-icons">
-                                                <i class="material-icons add"></i>
-                                                <i class="material-icons remove"></i>
-                                            </span>
-                                        </span>
+                      <a href="#nutrition_sub_menu_{$_expand_id}"
+                         class="icon-collapse stretched-link text-reset d-block"
+                         data-toggle="collapse">
+                        <i class="material-icons d-block"></i>
+                      </a>
                     </div>
-                    <ul id="nutrition_sub_menu_{$_expand_id}" class="collapse"
-                        aria-expanded="false">
-                        {if $recipe.nutrition.calories}
-                          <li class="recipe_content-info"
-                              itemprop="calories"
-                              content="{$recipe.nutrition.calories}">
+                    <div id="nutrition_sub_menu_{$_expand_id}" class="collapse d-md-block">
+                      <ul class="links-list">
+                          {if $recipe.nutrition.calories}
+                            <li class="recipe_content-info"
+                                itemprop="calories"
+                                content="{$recipe.nutrition.calories}">
                             <span
                               class="recipe-nutrition-name">{l s='Calories' d='Modules.Recipesproducts.Front'}</span>
-                            <span class="recipe-nutrition-value">{$recipe.nutrition.calories}</span>
-                          </li>
-                        {/if}
-                        {if $recipe.nutrition.carbohydrateContent}
-                          <li class="recipe_content-info"
-                              itemprop="carbohydrateContent"
-                              content="{$recipe.nutrition.carbohydrateContent}">
+                              <span class="recipe-nutrition-value">{$recipe.nutrition.calories}</span>
+                            </li>
+                          {/if}
+                          {if $recipe.nutrition.carbohydrateContent}
+                            <li class="recipe_content-info"
+                                itemprop="carbohydrateContent"
+                                content="{$recipe.nutrition.carbohydrateContent}">
                             <span
                               class="recipe-nutrition-name">{l s='Carbohydrate' d='Modules.Recipesproducts.Front'}</span>
-                            <span class="recipe-nutrition-value">{$recipe.nutrition.carbohydrateContent}</span>
-                          </li>
-                        {/if}
-                        {if $recipe.nutrition.sugarContent}
-                          <li class="recipe_content-info"
-                              itemprop="sugarContent"
-                              content="{$recipe.nutrition.sugarContent}">
+                              <span class="recipe-nutrition-value">{$recipe.nutrition.carbohydrateContent}</span>
+                            </li>
+                          {/if}
+                          {if $recipe.nutrition.sugarContent}
+                            <li class="recipe_content-info"
+                                itemprop="sugarContent"
+                                content="{$recipe.nutrition.sugarContent}">
                             <span
                               class="recipe-nutrition-name of-which">{l s='Sugar' d='Modules.Recipesproducts.Front'}</span>
-                            <span class="recipe-nutrition-value">{$recipe.nutrition.sugarContent}</span>
-                          </li>
-                        {/if}
-                        {if $recipe.nutrition.fatContent}
-                          <li class="recipe_content-info"
-                              itemprop="fatContent"
-                              content="{$recipe.nutrition.fatContent}">
-                            <span class="recipe-nutrition-name">{l s='Fat' d='Modules.Recipesproducts.Front'}</span>
-                            <span class="recipe-nutrition-value">{$recipe.nutrition.fatContent}</span>
-                          </li>
-                        {/if}
-                        {if $recipe.nutrition.saturatedFatContent}
-                          <li class="recipe_content-info"
-                              itemprop="saturatedFatContent"
-                              content="{$recipe.nutrition.saturatedFatContent}">
+                              <span class="recipe-nutrition-value">{$recipe.nutrition.sugarContent}</span>
+                            </li>
+                          {/if}
+                          {if $recipe.nutrition.fatContent}
+                            <li class="recipe_content-info"
+                                itemprop="fatContent"
+                                content="{$recipe.nutrition.fatContent}">
+                              <span class="recipe-nutrition-name">{l s='Fat' d='Modules.Recipesproducts.Front'}</span>
+                              <span class="recipe-nutrition-value">{$recipe.nutrition.fatContent}</span>
+                            </li>
+                          {/if}
+                          {if $recipe.nutrition.saturatedFatContent}
+                            <li class="recipe_content-info"
+                                itemprop="saturatedFatContent"
+                                content="{$recipe.nutrition.saturatedFatContent}">
                             <span
                               class="recipe-nutrition-name of-which">{l s='SaturatedFat' d='Modules.Recipesproducts.Front'}</span>
-                            <span class="recipe-nutrition-value">{$recipe.nutrition.saturatedFatContent}</span>
-                          </li>
-                        {/if}
-                        {if $recipe.nutrition.fiberContent}
-                          <li class="recipe_content-info"
-                              itemprop="fiberContent"
-                              content="{$recipe.nutrition.fiberContent}">
-                            <span class="recipe-nutrition-name">{l s='Fiber' d='Modules.Recipesproducts.Front'}</span>
-                            <span class="recipe-nutrition-value">{$recipe.nutrition.fiberContent}</span>
-                          </li>
-                        {/if}
-                        {if $recipe.nutrition.cholesterolContent}
-                          <li class="recipe_content-info"
-                              itemprop="cholesterolContent"
-                              content="{$recipe.nutrition.cholesterolContent}">
+                              <span class="recipe-nutrition-value">{$recipe.nutrition.saturatedFatContent}</span>
+                            </li>
+                          {/if}
+                          {if $recipe.nutrition.fiberContent}
+                            <li class="recipe_content-info"
+                                itemprop="fiberContent"
+                                content="{$recipe.nutrition.fiberContent}">
+                              <span class="recipe-nutrition-name">{l s='Fiber' d='Modules.Recipesproducts.Front'}</span>
+                              <span class="recipe-nutrition-value">{$recipe.nutrition.fiberContent}</span>
+                            </li>
+                          {/if}
+                          {if $recipe.nutrition.cholesterolContent}
+                            <li class="recipe_content-info"
+                                itemprop="cholesterolContent"
+                                content="{$recipe.nutrition.cholesterolContent}">
                             <span
                               class="recipe-nutrition-name">{l s='Cholesterol' d='Modules.Recipesproducts.Front'}</span>
-                            <span class="recipe-nutrition-value">{$recipe.nutrition.cholesterolContent}</span>
-                          </li>
-                        {/if}
-                        {if $recipe.nutrition.sodiumContent}
-                          <li class="recipe_content-info"
-                              itemprop="sodiumContent"
-                              content="{$recipe.nutrition.sodiumContent}">
-                            <span class="recipe-nutrition-name">{l s='Sodium' d='Modules.Recipesproducts.Front'}</span>
-                            <span class="recipe-nutrition-value">{$recipe.nutrition.sodiumContent}</span>
-                          </li>
-                        {/if}
-                        {if $recipe.nutrition.proteinContent}
-                          <li class="recipe_content-info"
-                              itemprop="proteinContent"
-                              content="{$recipe.nutrition.proteinContent}">
-                            <span class="recipe-nutrition-name">{l s='Protein' d='Modules.Recipesproducts.Front'}</span>
-                            <span class="recipe-nutrition-value">{$recipe.nutrition.proteinContent}</span>
-                          </li>
-                        {/if}
-                    </ul>
+                              <span class="recipe-nutrition-value">{$recipe.nutrition.cholesterolContent}</span>
+                            </li>
+                          {/if}
+                          {if $recipe.nutrition.sodiumContent}
+                            <li class="recipe_content-info"
+                                itemprop="sodiumContent"
+                                content="{$recipe.nutrition.sodiumContent}">
+                              <span
+                                class="recipe-nutrition-name">{l s='Sodium' d='Modules.Recipesproducts.Front'}</span>
+                              <span class="recipe-nutrition-value">{$recipe.nutrition.sodiumContent}</span>
+                            </li>
+                          {/if}
+                          {if $recipe.nutrition.proteinContent}
+                            <li class="recipe_content-info"
+                                itemprop="proteinContent"
+                                content="{$recipe.nutrition.proteinContent}">
+                              <span
+                                class="recipe-nutrition-name">{l s='Protein' d='Modules.Recipesproducts.Front'}</span>
+                              <span class="recipe-nutrition-value">{$recipe.nutrition.proteinContent}</span>
+                            </li>
+                          {/if}
+                      </ul>
+                    </div>
                   </div>
                 </div>
               {/if}
