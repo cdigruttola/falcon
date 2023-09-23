@@ -94,8 +94,8 @@
                       <span class="recipe_content-info">{l s='Nutrition facts' d='Modules.Recipesproducts.Front'}</span>
                       <span class="pull-xs-right">
                                             <span class="navbar-toggler collapse-icons">
-                                                <i class="material-icons add">&#xE313;</i>
-                                                <i class="material-icons remove">&#xE316;</i>
+                                                <i class="material-icons add"></i>
+                                                <i class="material-icons remove"></i>
                                             </span>
                                         </span>
                     </div>
