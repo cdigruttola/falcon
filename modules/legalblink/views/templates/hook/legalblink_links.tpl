@@ -22,24 +22,25 @@
 *  @license   http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
-<div id="legalblink" class="col-md-6 links wrapper">
-  <p class="h3 hidden-sm-down">{l s='Security and transparency' d='Modules.Legalblink.Preferences'}</p>
+<div id="legalblink" class="col-md-3 col-12 mb-lg-4">
     {assign var=_expand_id value=10|mt_rand:100000}
-  <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_{$_expand_id}" data-toggle="collapse">
-    <span class="h3">{l s='Security and transparency' d='Modules.Legalblink.Preferences'}</span>
-    <span class="pull-xs-right">
-          <span class="navbar-toggler collapse-icons">
-            <i class="material-icons add">&#xE313;</i>
-            <i class="material-icons remove">&#xE316;</i>
-          </span>
-        </span>
+  <div class="d-flex align-items-center mb-3 justify-content-between position-relative">
+    <span class="h4 mb-0">{l s='Security and transparency' d='Modules.Legalblink.Preferences'}</span>
+    <a href="#footer_sub_menu_{$_expand_id}" class="icon-collapse stretched-link text-reset d-block d-md-none"
+       data-toggle="collapse">
+      <i class="material-icons d-block"></i>
+    </a>
   </div>
-  <ul id="footer_sub_menu_{$_expand_id}" class="collapse d-md-block">
-    <li><a href="#"
-           class="lb-cs-settings-link">{l s='Update cookies preferences' d='Modules.Legalblink.Preferences'}</a>
-    </li>
-      {foreach from=$elements item=element}
-        <li><a href="{$element.link}">{$element.text}</a></li>
-      {/foreach}
-  </ul>
+  <div id="footer_sub_menu_{$_expand_id}" class="collapse d-md-block">
+    <ul class="links-list">
+      <li><a href="#"
+             class="lb-cs-settings-link links-list__elem">{l s='Update cookies preferences' d='Modules.Legalblink.Preferences'}</a>
+      </li>
+        {foreach from=$elements item=element}
+          <li class="links-list__elem">
+            <a href="{$element.link}">{$element.text}</a>
+          </li>
+        {/foreach}
+    </ul>
+  </div>
 </div>
