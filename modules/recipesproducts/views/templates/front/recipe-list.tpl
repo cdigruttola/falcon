@@ -31,7 +31,7 @@
         {if !empty($recipe.image)}
             {images_block}
               <div class="recipe_img">
-                <img itemprop="image" class="img-responsive"
+                <img itemprop="image" class="img-responsive rounded"
                      src="{$recipe.image|escape:'html':'UTF-8'}"
                      width="auto" height="auto" alt="{$recipe.name|escape:'html':'UTF-8'}"
                      title="{$recipe.name|escape:'html':'UTF-8'}">
