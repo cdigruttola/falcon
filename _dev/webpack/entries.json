@@ -4,6 +4,7 @@
     "product",
     "checkout",
     "listing",
-    "contact"
+    "contact",
+    "error"
   ]
 }

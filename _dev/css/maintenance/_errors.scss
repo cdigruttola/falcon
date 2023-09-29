@@ -1,0 +1,39 @@
+body {
+  font-family: "Roboto", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: $background;
+
+  #layout-error {
+    text-align: center;
+
+    .logo {
+      img {
+        height: 25vh;
+
+        @media (max-width: 550px) {
+          height: auto;
+          width: 100%;
+        }
+      }
+    }
+
+    #main {
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 1.25rem;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #212529;
+      }
+
+      .page-maintenance {
+        margin-bottom: 10rem;
+
+        #content-maintenance {
+          width: 100%;
+          content: url(../img/maintenance.svg);
+          height: 30vh;
+        }
+      }
+    }
+  }
+}
