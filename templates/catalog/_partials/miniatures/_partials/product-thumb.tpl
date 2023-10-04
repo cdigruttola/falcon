@@ -1,6 +1,6 @@
 {block name='product_thumbnail'}
   <div class="product-miniature__thumb position-relative {$thumbExtraClass|default:''}">
-    <a href="{$product.url}" class="product-miniature__thumb-link">
+    <a href="{$product.url}" class="product-miniature__thumb-link" rel="nofollow">
       {images_block webpEnabled=$webpEnabled}
         <img
           {if $product.default_image}
