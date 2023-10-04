@@ -32,7 +32,7 @@
     </h1>
     <div class="row">
         {if !empty($category.image.large.url)}
-          <div class="category-cover col-2">
+          <div class="category-cover col-lg-2 col-md-3 col-sm-12">
             <picture>
                 {if !empty($category.image.large.sources.avif)}
                   <source srcset="{$category.image.large.sources.avif}" type="image/avif">{/if}
@@ -46,7 +46,7 @@
         {/if}
         {if $category.description && $listing.pagination.items_shown_from == 1}
           <div id="category-description"
-               class="cms-content {if !empty($category.image.large.url)}col-10{else}col-12{/if}">{$category.description nofilter}</div>
+               class="cms-content {if !empty($category.image.large.url)}col-lg-10 col-md-9{else}col-lg-12 col-md-12{/if} col-sm-12">{$category.description nofilter}</div>
         {/if}
     </div>
   </div>
