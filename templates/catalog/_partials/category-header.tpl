@@ -23,15 +23,31 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 <div id="js-product-list-header">
-    <div class="block-category">
-        <h1 class="h1">
-            {$category.name}
-            {if $listing.pagination.items_shown_from !== 1}
-                {l s='- page' d='Shop.Theme.Catalog'} {$listing.pagination.current_page}
-            {/if}
-        </h1>
+  <div class="block-category">
+    <h1 class="h1">
+        {$category.name}
+        {if $listing.pagination.items_shown_from !== 1}
+            {l s='- page' d='Shop.Theme.Catalog'} {$listing.pagination.current_page}
+        {/if}
+    </h1>
+    <div class="row">
+        {if !empty($category.image.large.url)}
+          <div class="category-cover col-2">
+            <picture>
+                {if !empty($category.image.large.sources.avif)}
+                  <source srcset="{$category.image.large.sources.avif}" type="image/avif">{/if}
+                {if !empty($category.image.large.sources.webp)}
+                  <source srcset="{$category.image.large.sources.webp}" type="image/webp">{/if}
+              <img src="{$category.image.large.url}"
+                   alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}"
+                   loading="lazy" width="141" height="180">
+            </picture>
+          </div>
+        {/if}
         {if $category.description && $listing.pagination.items_shown_from == 1}
-            <div id="category-description" class="cms-content">{$category.description nofilter}</div>
+          <div id="category-description"
+               class="cms-content {if !empty($category.image.large.url)}col-10{else}col-12{/if}">{$category.description nofilter}</div>
         {/if}
     </div>
+  </div>
 </div>
