@@ -33,15 +33,11 @@
     <div class="row">
         {if !empty($category.image.large.url)}
           <div class="category-cover col-lg-2 col-md-3 col-sm-12">
-            <picture>
-                {if !empty($category.image.large.sources.avif)}
-                  <source srcset="{$category.image.large.sources.avif}" type="image/avif">{/if}
-                {if !empty($category.image.large.sources.webp)}
-                  <source srcset="{$category.image.large.sources.webp}" type="image/webp">{/if}
-              <img src="{$category.image.large.url}"
-                   alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}"
-                   loading="lazy" width="141" height="180">
-            </picture>
+              {images_block}
+                <img src="{$category.image.large.url}"
+                     alt="{if !empty($category.image.legend)}{$category.image.legend}{else}{$category.name}{/if}"
+                     loading="lazy" width="141" height="180">
+              {/images_block}
           </div>
         {/if}
         {if $category.description && $listing.pagination.items_shown_from == 1}
