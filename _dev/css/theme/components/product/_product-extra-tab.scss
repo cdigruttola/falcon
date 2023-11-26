@@ -9,14 +9,14 @@
     .nav-link {
       $self: &;
 
-      > h2 {
+      > h2, > h3 {
         color: $digruttola1;
         font-weight: unset;
         font-size: unset;
         margin-bottom: unset;
       }
 
-      &.active > h2 {
+      &.active > h2, &.active > h3 {
         color: $nav-tabs-link-active-color;
         background-color: $nav-tabs-link-active-bg;
         border-color: $nav-tabs-link-active-border-color;

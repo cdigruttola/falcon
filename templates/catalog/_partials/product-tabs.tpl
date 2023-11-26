@@ -41,7 +41,7 @@
               data-toggle="tab"
               href="#extra-{$extraKey}"
               role="tab"
-              aria-controls="extra-{$extraKey}"><h2>{$extra.title}</h2></a>
+              aria-controls="extra-{$extraKey}"><h3>{$extra.title}</h3></a>
           </li>
         {/foreach}
       </ul>
