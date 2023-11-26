@@ -10,7 +10,7 @@
               href="#description"
               role="tab"
               aria-controls="description"
-              >{l s='Description' d='Shop.Theme.Catalog'}</a>
+            ><h2>{l s='Description' d='Shop.Theme.Catalog'}</h2></a>
           </li>
         {/if}
         {if $modules.is_themecore.show_product_details}
@@ -21,7 +21,7 @@
               href="#product-details"
               role="tab"
               aria-controls="product-details"
-              >{l s='Product Details' d='Shop.Theme.Catalog'}</a>
+            ><h2>{l s='Product Details' d='Shop.Theme.Catalog'}</h2></a>
           </li>
         {/if}
         {if $product.attachments}
@@ -31,7 +31,7 @@
               data-toggle="tab"
               href="#attachments"
               role="tab"
-              aria-controls="attachments">{l s='Attachments' d='Shop.Theme.Catalog'}</a>
+              aria-controls="attachments"><h2>{l s='Attachments' d='Shop.Theme.Catalog'}</h2></a>
           </li>
         {/if}
         {foreach from=$product.extraContent item=extra key=extraKey}
@@ -41,7 +41,7 @@
               data-toggle="tab"
               href="#extra-{$extraKey}"
               role="tab"
-              aria-controls="extra-{$extraKey}">{$extra.title}</a>
+              aria-controls="extra-{$extraKey}"><h2>{$extra.title}</h2></a>
           </li>
         {/foreach}
       </ul>

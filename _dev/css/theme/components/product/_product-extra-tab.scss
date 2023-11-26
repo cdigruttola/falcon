@@ -5,6 +5,23 @@
 
   .nav-item {
     text-align: center;
+
+    .nav-link {
+      $self: &;
+
+      > h2 {
+        color: $digruttola1;
+        font-weight: unset;
+        font-size: unset;
+        margin-bottom: unset;
+      }
+
+      &.active > h2 {
+        color: $nav-tabs-link-active-color;
+        background-color: $nav-tabs-link-active-bg;
+        border-color: $nav-tabs-link-active-border-color;
+      }
+    }
   }
 }
 
