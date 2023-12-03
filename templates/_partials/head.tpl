@@ -46,9 +46,8 @@
     {foreach from=$urls.alternative_langs item=pageUrl key=code}
       {if $language.language_code == $code}
         <link rel="alternate" href="{$pageUrl}" hreflang="x-default">
-      {else}
-        <link rel="alternate" href="{$pageUrl}" hreflang="{$code}">
       {/if}
+      <link rel="alternate" href="{$pageUrl}" hreflang="{$code}">
     {/foreach}
   {/block}
 
