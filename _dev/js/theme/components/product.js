@@ -14,22 +14,24 @@ $(() => {
   };
 
   const createProductSpin = () => {
-    const $quantityInput = $('.quantity_wanted');
+    const $quantityInputs = $('.quantity_wanted');
 
-    $quantityInput.TouchSpin({
-      verticalupclass: 'material-icons touchspin-up',
-      verticaldownclass: 'material-icons touchspin-down',
-      buttondown_class: 'btn btn-touchspin js-touchspin',
-      buttonup_class: 'btn btn-touchspin js-touchspin',
-      min: parseInt($quantityInput.attr('min'), 10),
-      max: 1000000,
-    });
+    $quantityInputs.each(function () {
+      $(this).TouchSpin({
+        verticalupclass: 'material-icons touchspin-up',
+        verticaldownclass: 'material-icons touchspin-down',
+        buttondown_class: 'btn btn-touchspin js-touchspin',
+        buttonup_class: 'btn btn-touchspin js-touchspin',
+        min: parseInt($(this).attr('min'), 10),
+        max: 1000000,
+      });
 
-    $quantityInput.on('focusout', () => {
-      if ($quantityInput.val() === '' || $quantityInput.val() < $quantityInput.attr('min')) {
-        $quantityInput.val($quantityInput.attr('min'));
-        $quantityInput.trigger('change');
-      }
+      $(this).on('focusout', () => {
+        if ($(this).val() === '' || $(this).val() < $(this).attr('min')) {
+          $(this).val($(this).attr('min'));
+          $(this).trigger('change');
+        }
+      });
     });
 
     $('body').on('change keyup', '.quantity_wanted', (event) => {
