@@ -15,7 +15,12 @@ export default (element, stickyWrapper, options = {}) => {
   }
 
   const {
-    extraOffsetTop = 0,
+    extraOffsetTop = () => {
+      if (document.querySelector('.simple_banner').textContent.trim().length > 0) {
+        return 10;
+      }
+      return 0;
+    },
     debounceTime = 5,
     zIndex = 100,
   } = options;
@@ -30,6 +35,7 @@ export default (element, stickyWrapper, options = {}) => {
       width: wrapperRect.width,
     };
   };
+
   const getExtraOffsetTop = typeof extraOffsetTop === 'function' ? extraOffsetTop : () => extraOffsetTop;
   const setElementSticky = () => {
     const { height } = getWrapperRect();
