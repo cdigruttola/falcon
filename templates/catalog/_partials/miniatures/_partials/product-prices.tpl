@@ -11,7 +11,7 @@
       {hook h='displayProductPriceBlock' product=$product type="before_price"}
 
         {assign var="split" value="."|explode:{$product.price_amount}}
-      <span class="price" aria-label="{l s='Price' d='Shop.Theme.Catalog'}">{$split[0]},<span class="decimal">{$split[1]}</span> {$currency_symbol}</span>
+      <span class="price" aria-label="{l s='Price' d='Shop.Theme.Catalog'}">{$product.price_with_lower_decimal|cleanHtml nofilter}</span>
 
       {hook h='displayProductPriceBlock' product=$product type='unit_price'}
 

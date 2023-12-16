@@ -47,7 +47,7 @@
             {else}
               <div class="current-price">
                 {assign var="split" value="."|explode:{$product.price_amount}}
-                <span>{$split[0]},<span class="decimal">{$split[1]}</span> {$currency_symbol}</span>
+                <span>{$product.price_with_lower_decimal|cleanHtml nofilter}</span>
               </div>
             {/if}
           </span>
