@@ -16,10 +16,7 @@ export default (element, stickyWrapper, options = {}) => {
 
   const {
     extraOffsetTop = () => {
-      if (document.querySelector('.simple_banner').textContent.trim().length > 0) {
-        return 10;
-      }
-      return 0;
+      return document.querySelector('.simple_banner').getBoundingClientRect().height;
     },
     debounceTime = 5,
     zIndex = 100,
@@ -38,7 +35,7 @@ export default (element, stickyWrapper, options = {}) => {
 
   const getExtraOffsetTop = typeof extraOffsetTop === 'function' ? extraOffsetTop : () => extraOffsetTop;
   const setElementSticky = () => {
-    const { height } = getWrapperRect();
+    const {height} = getWrapperRect();
     stickyWrapper.style.height = `${height}px`;
     element.style.top = `${getExtraOffsetTop()}px`;
     element.style.left = 0;
@@ -60,7 +57,7 @@ export default (element, stickyWrapper, options = {}) => {
   };
   const getIsSticky = () => isSticky;
   const handleSticky = () => {
-    const { top } = getWrapperRect();
+    const {top} = getWrapperRect();
 
     if (top <= getExtraOffsetTop()) {
       if (!isSticky) {
