@@ -11,6 +11,11 @@
 
   &--lg {
     @include font-size($h2-font-size);
+
+    .decimal {
+      @include font-size($font-size-lg, true);
+    }
+
   }
 
   &--sm {
@@ -18,7 +23,7 @@
   }
 
   & .decimal {
-    font-size: medium;
+    @include font-size($font-size-sm);
   }
 
 }
