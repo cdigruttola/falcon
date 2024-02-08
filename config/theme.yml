@@ -72,6 +72,7 @@ global_settings:
         - ps_currencyselector
       displayTop:
         - is_searchbar
+        - is_favoriteproducts
         - ps_customersignin
         - is_shoppingcart
         - ps_mainmenu
