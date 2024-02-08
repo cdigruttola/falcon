@@ -13,15 +13,17 @@
               >{l s='Description' d='Shop.Theme.Catalog'}</a>
           </li>
         {/if}
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            data-toggle="tab"
-            href="#product-details"
-            role="tab"
-            aria-controls="product-details"
-            >{l s='Product Details' d='Shop.Theme.Catalog'}</a>
-        </li>
+        {if $modules.is_themecore.show_product_details}
+          <li class="nav-item">
+            <a
+                    class="nav-link"
+                    data-toggle="tab"
+                    href="#product-details"
+                    role="tab"
+                    aria-controls="product-details"
+            ><h2>{l s='Product Details' d='Shop.Theme.Catalog'}</h2></a>
+          </li>
+        {/if}
         {if $product.attachments}
           <li class="nav-item">
             <a
@@ -55,9 +57,11 @@
           {/block}
         </div>
 
-        {block name='product_details'}
-          {include file='catalog/_partials/product-details.tpl'}
-        {/block}
+        {if $modules.is_themecore.show_product_details}
+          {block name='product_details'}
+            {include file='catalog/_partials/product-details.tpl'}
+          {/block}
+        {/if}
 
         {block name='product_attachments'}
           {if $product.attachments}
