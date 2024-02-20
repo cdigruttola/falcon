@@ -31,7 +31,7 @@
     {/block}
   </head>
 
-  <body id="{$page.page_name}" class="{$page.body_classes|classnames}" lang="{$language.iso_code}">
+  <body id="{$page.page_name}" class="{$page.body_classes|classnames}" lang="{$language.language_code}">
 
     {block name='hook_after_body_opening_tag'}
       {hook h='displayAfterBodyOpeningTag'}
