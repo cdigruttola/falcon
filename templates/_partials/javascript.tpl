@@ -46,3 +46,5 @@
     {/foreach}
   </script>
 {/if}
+
+<script src="https://cdn.userway.org/widget.js" data-account="RF5mYMUhDP"></script>
