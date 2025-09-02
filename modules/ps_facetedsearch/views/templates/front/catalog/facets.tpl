@@ -75,7 +75,7 @@
                           type="{if $facet.multipleSelectionAllowed}checkbox{else}radio{/if}" class="custom-control-input"
                           {if $filter.active } checked{/if}>
                         <label for="facet_input_{$_expand_id}_{$filter_key}" {if isset($filter.properties.color)}
-                            class="custom-control-label custom-control-label-{if Tools::getBrightness($filter.properties.color) > 128}dark{else}bright{/if}"
+                            class="custom-control-label custom-control-label-{if $filter.properties.color|isBright}bright{else}dark{/if}"
                           {else} class="custom-control-label"
                           {/if}>
                           {if isset($filter.properties.color)}

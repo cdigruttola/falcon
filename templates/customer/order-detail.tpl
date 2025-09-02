@@ -89,7 +89,7 @@
                 <td>{$state.history_date}</td>
                 <td>
                   <span
-                    class="label label-pill badge {if Tools::getBrightness($state.color) < 128}text-white{/if}"
+                    class="label label-pill badge {if $state.color|isBright}text-white{/if}"
                     style="background-color:{$state.color}">
                     {$state.ostate_name}
                   </span>

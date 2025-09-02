@@ -60,7 +60,7 @@
             <td class="hidden-md-down align-middle">{$order.details.payment}</td>
             <td class="align-middle">
               <span
-                class="label label-pill badge {if Tools::getBrightness($order.history.current.color) < 128}text-white{/if}"
+                class="label label-pill badge {if $order.history.current.color|isBright}text-white{/if}"
                 style="background-color:{$order.history.current.color}"
               >
                 {$order.history.current.ostate_name}
