@@ -35,7 +35,7 @@
         <span itemprop="gtin13">{$product.ean13|escape:'html':'UTF-8'}</span>
       </div>
     {/if}
-    {if isset($product.weight) and ($product.weight != "")}
+    {if !$product.virtual and isset($product.weight) and ($product.weight != "")}
       <div class="product-weight">
         <label class="label">{l s='Weight' d='Shop.Theme.Catalog'}: </label>
         <span>{$product.weight|string_format:"%.3f"} {$product.weight_unit} ℮</span>
