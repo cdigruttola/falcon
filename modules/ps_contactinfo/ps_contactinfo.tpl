@@ -57,6 +57,16 @@
         ]
         d='Shop.Theme.Global'
       }
+      <br>
+      {* [1][/1] is for a HTML tag. *}
+      {l s='WhatsApp: [1]%phone%[/1]'
+        sprintf=[
+        '[1]' => "<a href='https://wa.me/{$contact_infos['phone']|replace:' ':''|replace:'+':''}'>",
+        '[/1]' => '</a>',
+        '%phone%' => $contact_infos.phone
+        ]
+        d='Shop.Theme.Global'
+      }
     {/if}
     {if $contact_infos.fax}
       <br>
